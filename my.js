@@ -16,25 +16,17 @@ buttonRed.addEventListener('click', OnClickRed)
 input.addEventListener('keyup', RenderOutput);
 
 function OnClickH1() {
-    let text = input.value;
     let startTag = "<h1>"
     let endTag = "</h1>"
-    let start = input.selectionStart;
-    let end = input.selectionEnd;
-
-    input.value = GetWrappedSelection(text, start, end, startTag, endTag);
-    RenderOutput();
+    
+    Changer(startTag, endTag);
 }
 
 function OnClickP() {
-    let text = input.value;
     let startTag = "<p>"
     let endTag = "</p>"
-    let start = input.selectionStart;
-    let end = input.selectionEnd;
-
-    input.value = GetWrappedSelection(text, start, end, startTag, endTag);
-    RenderOutput();
+    
+    Changer(startTag, endTag);
 }
 
 function OnClickStrong() {
