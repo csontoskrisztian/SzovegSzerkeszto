@@ -1,0 +1,20 @@
+A szövegszerkesztőt egészítsük ki 
+	minél több elemmel
+	Használjunk ikonokat: https://fontawesome.com/
+	kép beszúrás
+	link
+	h1 ... h6
+	valmilyen kiemelés (szövegközi stílussal)
+	alsó, felső index 
+	igazítások (szövegközi stílussal)
+	vonal beillesztés
+	bekezdésekből felsorolás (számozott, számozatlan)
+	dőlt betű
+	áthúzás
+	korrektúra
+
+Dizájn:
+	bootstrap
+
+Alapban a két ablak egymás mellett, és reszponzív legyen
+mobilon jó legyen
