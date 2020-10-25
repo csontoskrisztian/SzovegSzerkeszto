@@ -1,23 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="my.css">
     <title>Szövegszerkesztő</title>
 </head>
+
 <body>
-    <h1>HTML szerkesztő</h1>
-    <div id="inputWrapper">
-        <textarea name="" id="input" rows="20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nam repellat cupiditate dolore ut perspiciatis optio laudantium, quos ipsam autem ea beatae quasi tenetur accusamus omnis eum, voluptate fugiat reiciendis at aliquid pariatur atque rem possimus corporis. Vel temporibus deleniti unde iste ipsa minus eveniet, atque qui obcaecati, commodi impedit maiores, cupiditate nobis non quae!</textarea>
+    <div id="MenuGroup">
+        <!-- Legördülő menü -->
+        <div id="Menu_Insert">
+            <label>Insert</label>
+            <button id="Img" class="ButtonModifier">Image</button>
+            <button id="a href=''" class="ButtonModifier">Link</button>
+        </div>
+
+        <!-- Legördülő menü -->
+        <div id="Menu_FontSize">
+            <label>Font Size</label>
+            <button id="p" class="ButtonModifier">p</button>
+            <button id="h1" class="ButtonModifier">H1</button>
+            <button id="h2" class="ButtonModifier">H2</button>
+            <button id="h3" class="ButtonModifier">H3</button>
+            <button id="h4" class="ButtonModifier">H4</button>
+            <button id="h5" class="ButtonModifier">H5</button>
+            <button id="h6" class="ButtonModifier">H6</button>
+        </div>
+
+        <!-- Csoport -->
+        <div id="Group_List">
+            <label>List</label>
+            <button id="ListUnordered" class="ButtonModifier">Unordered</button>
+            <button id="ListOrdered" class="ButtonModifier">Ordered</button>
+        </div>
+
+        <!-- Csoport -->
+        <div id="Group_Formatting">
+            <label>Formatting</label>
+            <button id="strong" class="ButtonModifier">Strong</button>
+            <button id="i" class="ButtonModifier">Italic</button>
+            <button id="span style='text-decoration: line-through;'" class="ButtonModifier">Crossed</button>
+            <button id="sup" class="ButtonModifier">x<sup>2</sup></button>
+            <button id="sub" class="ButtonModifier">x<sub>2</sub></button>
+        </div>
+
+        <!-- Legördülő menü -->
+        <div id="Menu_Color">
+            <label>Color</label>
+            <button id="span color: rgb()" style="width: 20px; height: 20px; background-color: black;" class="ButtonModifier"></button>
+            <input type="number" id="Menu_Color_R" max="255" min="0">
+            <input type="number" id="Menu_Color_G" max="255" min="0">
+            <input type="number" id="Menu_Color_B" max="255" min="0">
+        </div>
+
+        <!-- Legördülő menü -->
+        <div id="Menu_Background">
+            <label>Highlight</label>
+            <button id="span style='background: '" style="width: 20px; height: 20px; background-color: yellow;" class="ButtonModifier"></button>
+            
+            <!-- Rádió gombok -->
+            <button id="buttonBYellow">Yellow</button>
+            <button id="buttonBGreen">Green</button>
+            <button id="buttonBCyan">Cyan</button>
+            <button id="buttonBPink">Pink</button>
+            <button id="buttonBBlue">Blue</button>
+            <button id="buttonBRed">Red</button>
+            <button id="buttonBDarkBlue">Dark Blue</button>
+            <button id="buttonBDarkGreen">Dark Green</button>
+            <button id="buttonBPurpule">Purpule</button>
+            <button id="buttonBGray">Gray</button>
+            <button id="buttonBBlack">Black</button>
+            <button id="buttonBNo">No Background</button>
+        </div>
+
+        <!-- Csoport -->
+        <div id="Group_Text_Align">
+            <label>Align</label>
+            <button id="span style='text-align: right'" class="ButtonModifier">Right</button>
+            <button id="span style='text-align: left'" class="ButtonModifier">Center</button>
+            <button id="span style='text-align: center'" class="ButtonModifier">Left</button>
+            <button id="span style='text-align: justify'" class="ButtonModifier">Justify</button>
+        </div>
     </div>
-    <div>
-        <button id="buttonH1">H1</button>
-        <button id="buttonP">paragraph</button>
-        <button id="buttonStrong">Strong</button>
-        <button id="buttonRed">Red</button>
-    </div>
+
     <br>
+
+    <div id="inputWrapper">
+        <textarea name="" id="input"
+            rows="20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nam repellat cupiditate dolore ut perspiciatis optio laudantium, quos ipsam autem ea beatae quasi tenetur accusamus omnis eum, voluptate fugiat reiciendis at aliquid pariatur atque rem possimus corporis. Vel temporibus deleniti unde iste ipsa minus eveniet, atque qui obcaecati, commodi impedit maiores, cupiditate nobis non quae!</textarea>
+    </div>
     <p>Output</p>
     <div id="output">
 
@@ -25,4 +98,5 @@
 
     <script src="my.js"></script>
 </body>
+
 </html>
