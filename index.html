@@ -13,8 +13,8 @@
         <!-- Legördülő menü -->
         <div id="Menu_Insert">
             <label>Insert</label>
-            <button id="Img" class="ButtonModifier">Image</button>
-            <button id="a href=''" class="ButtonModifier">Link</button>
+            <button id="Img src='' style='width: 100px; height: 100px;'" class="ButtonModifier">Image</button>
+            <button id="a href='http://'" class="ButtonModifier">Link</button>
         </div>
 
         <!-- Legördülő menü -->
@@ -32,8 +32,8 @@
         <!-- Csoport -->
         <div id="Group_List">
             <label>List</label>
-            <button id="ListUnordered" class="ButtonModifier">Unordered</button>
-            <button id="ListOrdered" class="ButtonModifier">Ordered</button>
+            <button id="ListUnordered" class="ButtonModifierList">Unordered</button>
+            <button id="ListOrdered" class="ButtonModifierList">Ordered</button>
         </div>
 
         <!-- Csoport -->
@@ -49,39 +49,40 @@
         <!-- Legördülő menü -->
         <div id="Menu_Color">
             <label>Color</label>
-            <button id="span color: rgb()" style="width: 20px; height: 20px; background-color: black;" class="ButtonModifier"></button>
-            <input type="number" id="Menu_Color_R" max="255" min="0">
-            <input type="number" id="Menu_Color_G" max="255" min="0">
-            <input type="number" id="Menu_Color_B" max="255" min="0">
+            <button id="span style='color: rgb(0, 0, 0)" style="width: 20px; height: 20px; background-color: black;"
+                class="ButtonModifier Menu_Color_Button"></button>
+            <input type="number" id="Menu_Color_R" max="255" min="0" value="0" class="CInput">
+            <input type="number" id="Menu_Color_G" max="255" min="0" value="0" class="CInput">
+            <input type="number" id="Menu_Color_B" max="255" min="0" value="0" class="CInput">
         </div>
 
         <!-- Legördülő menü -->
         <div id="Menu_Background">
             <label>Highlight</label>
-            <button id="span style='background: '" style="width: 20px; height: 20px; background-color: yellow;" class="ButtonModifier"></button>
-            
+            <button id="span style='background: '" style="width: 20px; height: 20px; background-color: yellow;"
+                class="ButtonModifier Menu_Background_Color"></button>
+
             <!-- Rádió gombok -->
-            <button id="buttonBYellow">Yellow</button>
-            <button id="buttonBGreen">Green</button>
-            <button id="buttonBCyan">Cyan</button>
-            <button id="buttonBPink">Pink</button>
-            <button id="buttonBBlue">Blue</button>
-            <button id="buttonBRed">Red</button>
-            <button id="buttonBDarkBlue">Dark Blue</button>
-            <button id="buttonBDarkGreen">Dark Green</button>
-            <button id="buttonBPurpule">Purpule</button>
-            <button id="buttonBGray">Gray</button>
-            <button id="buttonBBlack">Black</button>
-            <button id="buttonBNo">No Background</button>
+            <input type="radio" name="BackgroundColor" id="yellow" class="BGCRadio" checked>Yellow</input>
+            <input type="radio" name="BackgroundColor" id="lime" class="BGCRadio">Green</input>
+            <input type="radio" name="BackgroundColor" id="cyan" class="BGCRadio">Cyan</input>
+            <input type="radio" name="BackgroundColor" id="pink" class="BGCRadio">Pink</input>
+            <input type="radio" name="BackgroundColor" id="blue" class="BGCRadio">Blue</input>
+            <input type="radio" name="BackgroundColor" id="red" class="BGCRadio">Red</input>
+            <input type="radio" name="BackgroundColor" id="blue" class="BGCRadio">Dark Blue</input>
+            <input type="radio" name="BackgroundColor" id="darkgreen" class="BGCRadio">Dark Green</input>
+            <input type="radio" name="BackgroundColor" id="purple" class="BGCRadio">Purple</input>
+            <input type="radio" name="BackgroundColor" id="gray" class="BGCRadio">Gray</input>
+            <input type="radio" name="BackgroundColor" id="black" class="BGCRadio">Black</input>
         </div>
 
         <!-- Csoport -->
         <div id="Group_Text_Align">
             <label>Align</label>
-            <button id="span style='text-align: right'" class="ButtonModifier">Right</button>
-            <button id="span style='text-align: left'" class="ButtonModifier">Center</button>
-            <button id="span style='text-align: center'" class="ButtonModifier">Left</button>
-            <button id="span style='text-align: justify'" class="ButtonModifier">Justify</button>
+            <button id="div style='text-align: right'" class="ButtonModifier">Right</button>
+            <button id="div style='text-align: left'" class="ButtonModifier">Left</button>
+            <button id="div style='text-align: center'" class="ButtonModifier">Center</button>
+            <button id="div style='text-align: justify'" class="ButtonModifier">Justify</button>
         </div>
     </div>
 
@@ -89,7 +90,7 @@
 
     <div id="inputWrapper">
         <textarea name="" id="input"
-            rows="20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nam repellat cupiditate dolore ut perspiciatis optio laudantium, quos ipsam autem ea beatae quasi tenetur accusamus omnis eum, voluptate fugiat reiciendis at aliquid pariatur atque rem possimus corporis. Vel temporibus deleniti unde iste ipsa minus eveniet, atque qui obcaecati, commodi impedit maiores, cupiditate nobis non quae!</textarea>
+            rows="20">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos libero, quae et hic ipsa eum minima, porro illum perferendis quos incidunt ex adipisci repellat odit!</textarea>
     </div>
     <p>Output</p>
     <div id="output">
