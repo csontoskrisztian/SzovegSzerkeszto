@@ -40,8 +40,8 @@ for (let i = 0; i < document.getElementsByClassName("ButtonModifierList").length
 function OnClickModifier() {
     // console.log("Hello World")
 
-    let startTag = "<" + this.id + ">";
-    let endTag = "</" + this.id.split(" ")[0] + ">";
+    let startTag = "<" + this.dataset.tags + ">";
+    let endTag = "</" + this.dataset.tags.split(" ")[0] + ">";
     // console.log(startTag, endTag)
 
     Changer(startTag, endTag);
@@ -53,13 +53,13 @@ function OnChangeColor() {
     let green = document.getElementById("Menu_Color_G").value;
     let blue = document.getElementById("Menu_Color_B").value;
 
-    document.getElementsByClassName("Menu_Color_Button")[0].id = "span style='color: rgb(" + red + "," + green + "," + blue + ")'";
+    document.getElementsByClassName("Menu_Color_Button")[0].dataset.tags = "span style='color: rgb(" + red + "," + green + "," + blue + ")'";
     document.getElementsByClassName("Menu_Color_Button")[0].style.color = "rgb(" + red + "," + green + "," + blue + ")";
 }
 
 // Gomb id megváltoztatása az adott rádiógomb alapján
 function OnChangeBGColor() {
-    document.getElementsByClassName("Menu_Background_Color")[0].id = "span style='background-color: " + this.dataset.color + "'";
+    document.getElementsByClassName("Menu_Background_Color")[0].dataset.tags = "span style='background-color: " + this.dataset.color + "'";
     document.getElementsByClassName("Menu_Background_Color")[0].style.backgroundColor = this.dataset.color;
 }
 
