@@ -54,13 +54,13 @@ function OnChangeColor() {
     let blue = document.getElementById("Menu_Color_B").value;
 
     document.getElementsByClassName("Menu_Color_Button")[0].id = "span style='color: rgb(" + red + "," + green + "," + blue + ")'";
-    document.getElementsByClassName("Menu_Color_Button")[0].style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
+    document.getElementsByClassName("Menu_Color_Button")[0].style.color = "rgb(" + red + "," + green + "," + blue + ")";
 }
 
 // Gomb id megváltoztatása az adott rádiógomb alapján
 function OnChangeBGColor() {
-    document.getElementsByClassName("Menu_Background_Color")[0].id = "span style='background-color: " + this.id + "'";
-    document.getElementsByClassName("Menu_Background_Color")[0].style.backgroundColor = this.id;
+    document.getElementsByClassName("Menu_Background_Color")[0].id = "span style='background-color: " + this.dataset.color + "'";
+    document.getElementsByClassName("Menu_Background_Color")[0].style.backgroundColor = this.dataset.color;
 }
 
 // Lista beszúrása
